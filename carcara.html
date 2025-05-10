@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cupom de Pedido - Carcará Delivery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #000;
+      background-color: #fff8e1;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .logo {
+      text-align: center;
+    }
+    .logo img {
+      width: 100px;
+    }
+    .info, .produtos, .totais {
+      margin-bottom: 20px;
+    }
+    .info p, .produtos p, .totais p {
+      margin: 5px 0;
+    }
+    .produtos p {
+      border-bottom: 1px dashed #999;
+    }
+    .btn-imprimir {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #ffa000;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .aviso {
+      font-size: 12px;
+      text-align: center;
+      margin-top: 20px;
+      color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="logo-carcara.png" alt="Carcará Delivery">
+  </div>
+  <h2>Carcará Delivery</h2>
+
+  <div class="info">
+    <p><strong>Cliente:</strong> João Silva</p>
+    <p><strong>Endereço:</strong> Rua das Flores, 123 - Bairro Centro</p>
+    <p><strong>CEP:</strong> 12345-678</p>
+    <p><strong>Forma de Pagamento:</strong> PIX</p>
+    <p><strong>Data:</strong> 05/05/2025</p>
+    <p><strong>Status:</strong> Em produção</p>
+  </div>
+
+  <div class="produtos">
+    <p><strong>Itens do Pedido:</strong></p>
+    <p>1x Pizza Calabresa - R$ 35,00</p>
+    <p>2x Suco de Laranja - R$ 10,00</p>
+    <p>1x Lasanha Bolonhesa - R$ 28,00</p>
+  </div>
+
+  <div class="totais">
+    <p><strong>Subtotal:</strong> R$ 73,00</p>
+    <p><strong>Taxa de Entrega:</strong> R$ 3,90</p>
+    <p><strong>Total:</strong> R$ 76,90</p>
+  </div>
+
+  <button class="btn-imprimir" onclick="window.print()">Imprimir Cupom</button>
+
+  <p class="aviso">* Entregas realizadas apenas até onde a moto chega. Contato até portaria ou recepção.</p>
+</body>
+</html>
